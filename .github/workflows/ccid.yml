@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: frontend-output
-          path: ./FrontEnd/dist
+          path: ./Frontend/dist
 #   deploy:
 #     runs-on: self-hosted
 #     needs: build
