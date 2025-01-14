@@ -18,7 +18,7 @@ jobs:
         working-directory: ./Frontend
       - name: Building the Frontend Artifact
         run: npm run build
-        working-directory: ./FrontEnd
+        working-directory: ./Frontend
       - name: Uploading the Frontend Build Artifact
         uses: actions/upload-artifact@v4
         with:
