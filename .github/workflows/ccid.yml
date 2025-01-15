@@ -24,14 +24,13 @@ jobs:
         with:
           name: frontend-output
           path: ./Frontend/dist
-#   deploy:
-#     runs-on: self-hosted
-#     needs: build
-#     steps:
-#       - name: Downloading Frontend Build Artifact
-#         uses: actions/download-artifact@v4
-#         with:
-#           name: frontend-output
-
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: Downloading Frontend Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-output
 #       - name: Removing old Files
 #         run: sudo rm -rf /var/www/xai.harkirat.site/*
