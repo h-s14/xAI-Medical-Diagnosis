@@ -32,5 +32,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: frontend-output
-#       - name: Removing old Files
-#         run: sudo rm -rf /var/www/xai.harkirat.site/*
+
+      - name: Removing old Files
+        run: sudo rm -rf /var/www/xai.harkirat.site/*
+
+      - name: Moving the Files to serving directory
+        run: sudo mv /home/ubuntu/xAIMed/_work/xAI-Medical-Diagnosis/xAI-Medical-Diagnosis/* /var/www/xai.harkirat.site/
+
+      - name: Restart Nginx
+        run: sudo systemctl restart nginx
