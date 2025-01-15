@@ -28,11 +28,11 @@ const Home = () => {
               img={"diabetes.jpeg"}
               btn={navBC}
             />
-            <ModelCard
+            {/* <ModelCard
               title={"SOME CANCER"}
               img={"diabetes.jpeg"}
               btn={navDB}
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -1,14 +1,22 @@
 import React from "react";
 import navHome from "../hooks/navHome.js";
+import Placeholder from "../components/Placeholder.jsx";
 
 const Diabetes = () => {
   const goHome = navHome();
   return (
     <>
-      <div>Diabetes</div>
-      <button className="bg-purple-500" onClick={goHome}>
+      <div className="pt-20">
+        {/* <button className="bg-purple-500" onClick={goHome}>
         Back
-      </button>
+      </button> */}
+
+        <Placeholder
+          link={
+            "https://github.com/h-s14/xAI-Medical-Diagnosis/tree/main/Backend/Diabetes"
+          }
+        />
+      </div>
     </>
   );
 };

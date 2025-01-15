@@ -4,43 +4,44 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     // <div className="absolute hidden h-10 w-full justify-between bg-gray-300 bg-opacity-30 backdrop-blur-md md:flex">
-    <div className="bg-nav-bar-bg fixed left-1/2 top-[20px] z-10 hidden w-[90%] translate-x-[-50%] items-center justify-between gap-16 rounded-full bg-opacity-60 px-10 py-1 text-gray-500 shadow-lg backdrop-blur-md md:flex">
+    <div className="fixed left-1/2 top-[20px] z-10 hidden w-[90%] translate-x-[-50%] items-center justify-between gap-16 rounded-full bg-nav-bar-bg bg-opacity-60 px-10 py-1 text-gray-500 shadow-lg backdrop-blur-md md:flex">
       <div className="flex gap-3">
         <NavLink
           to="/"
-          className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
+          className="rounded-full p-1 transition duration-500 hover:scale-110 hover:text-nav-bar-link-hover"
         >
           Home
         </NavLink>
         <NavLink
           to="/diabetes"
-          className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
+          className="rounded-full p-1 transition duration-500 hover:scale-110 hover:text-nav-bar-link-hover"
         >
           Diabetes
         </NavLink>
         <NavLink
           to="/bcancer"
-          className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
+          className="rounded-full p-1 transition duration-500 hover:scale-110 hover:text-nav-bar-link-hover"
         >
           Breast Cancer
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/diabetes"
           className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
         >
           Some Cancer
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/"
-          className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
+          className="rounded-full p-1 transition duration-500 hover:scale-110 hover:text-nav-bar-link-hover"
         >
           About
         </NavLink>
       </div>
       <div className="flex gap-3">
         <NavLink
-          to="/"
-          className="hover:text-nav-bar-link-hover rounded-full p-1 transition duration-500 hover:scale-110"
+          to="https://github.com/h-s14/xAI-Medical-Diagnosis/tree/main/Backend"
+          target="_blank"
+          className="rounded-full p-1 transition duration-500 hover:scale-110 hover:text-nav-bar-link-hover"
         >
           Models
         </NavLink>
