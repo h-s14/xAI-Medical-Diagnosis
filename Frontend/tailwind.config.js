@@ -14,7 +14,7 @@ export default {
         gls2: "#D9E4E8",
       },
       backgroundImage: {
-        "bg-image": "url('bg.jpeg')",
+        "bg-image": "url('/bg.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       backgroundSize: {
