@@ -14,10 +14,10 @@ const Home = () => {
   return (
     <>
       <div className="h-screen bg-bg-img-clr pt-10">
-        <div className="h-52 bg-bg-img-clr bg-bg-image bg-custom-size bg-center bg-no-repeat text-white">
-          <span className="absolute mx-[36rem] mt-[10rem] text-3xl">
+        <div className="flex h-52 justify-center bg-bg-img-clr bg-bg-image bg-custom-size bg-center bg-no-repeat text-white">
+          <div className="absolute mt-[10rem] flex justify-center text-3xl sm:mx-[20rem] lg:mx-[36rem]">
             xAI Medical Diagnosis
-          </span>
+          </div>
         </div>
         <div className="flex w-full justify-center">
           <div className="flex max-w-[70%] justify-center gap-5 rounded-lg bg-gls bg-opacity-60 px-7 py-9 shadow-lg backdrop-blur-md">
